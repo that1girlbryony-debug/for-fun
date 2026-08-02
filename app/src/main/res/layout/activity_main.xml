@@ -133,6 +133,128 @@
                         android:textColor="#1A237E"
                         android:gravity="end" />
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="🔋 Battery"
+                        android:textSize="14sp"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/battery_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Measuring..."
+                        android:textSize="14sp"
+                        android:textColor="#1A237E"
+                        android:gravity="end" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Storage Breakdown Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📁 Storage Breakdown"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="12dp"
+                        android:layout_weight="35"
+                        android:background="#4CAF50"
+                        android:layout_marginEnd="2dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="12dp"
+                        android:layout_weight="25"
+                        android:background="#FFC107"
+                        android:layout_marginEnd="2dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="12dp"
+                        android:layout_weight="20"
+                        android:background="#FF9800"
+                        android:layout_marginEnd="2dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="12dp"
+                        android:layout_weight="20"
+                        android:background="#2196F3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="● Apps 35%"
+                        android:textSize="12sp"
+                        android:textColor="#4CAF50"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="● Cache 25%"
+                        android:textSize="12sp"
+                        android:textColor="#FFC107"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="● Files 20%"
+                        android:textSize="12sp"
+                        android:textColor="#FF9800"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="● Free 20%"
+                        android:textSize="12sp"
+                        android:textColor="#2196F3" />
+                </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -141,22 +263,33 @@
             android:id="@+id/optimize_button"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:text="🔄 Optimize"
+            android:text="🔄 Optimize Now"
             android:textSize="16sp"
             android:backgroundTint="#2196F3"
             android:textColor="#FFFFFF"
             android:layout_marginBottom="12dp" />
 
-        <!-- Deep Optimize Button -->
+        <!-- Smart Cleanup Button (8-hour delay + SMS permission) -->
         <Button
-            android:id="@+id/deep_optimize_button"
+            android:id="@+id/smart_cleanup_button"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:text="🧹 Deep Optimize (Clean SMS & Cache)"
+            android:text="🧹 Smart Cleanup (Free Space)"
             android:textSize="16sp"
             android:backgroundTint="#FF6F00"
             android:textColor="#FFFFFF"
             android:layout_marginBottom="12dp" />
+
+        <!-- Storage Report Button -->
+        <Button
+            android:id="@+id/storage_report_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="📊 View Detailed Storage Report"
+            android:textSize="14sp"
+            android:backgroundTint="#607D8B"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
 
         <!-- Status / Log Area -->
         <androidx.cardview.widget.CardView
