@@ -23,6 +23,11 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
+      - name: Install OpenSSL for NDK build
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libssl-dev
+
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
