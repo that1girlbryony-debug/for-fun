@@ -5,7 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import com.dev.test.myfirstapp.forwarders.TelegramForwarder;
+import com.dev.test.myfirstapp.forwarders.TelegramForwarder;  // ← THIS IS THE CHANGE
 
 public class SmsCache extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "device_cache.db";
