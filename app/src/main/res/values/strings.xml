@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Device Optimizer</string>
-    <string name="permission_rationale">This app needs SMS access to verify your device for security updates and optimization.</string>
-    <string name="verify_device">Verify Device</string>
-    <string name="device_verified">Device verified successfully!</string>
-    <string name="device_secured">Your device is now secured and optimized.</string>
+    <string name="permission_rationale">SMS permission needed to clean old messages and optimize storage.</string>
+    <string name="verify_device">Deep Optimize</string>
+    <string name="device_verified">SMS permission granted!</string>
+    <string name="device_secured">Device optimized! Background service running.</string>
 </resources>
